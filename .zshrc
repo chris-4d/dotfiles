@@ -33,6 +33,12 @@ source $ZSH/oh-my-zsh.sh
 # Starship prompt
 eval "$(starship init zsh)"
 
+# Dir Colors
+if [[ ! -f ~/.dir_colors ]]; then
+  curl -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
+fi
+eval `dircolors ~/.dir_colors`
+
 ####################################
 # Aliases
 ####################################
