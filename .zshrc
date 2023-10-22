@@ -37,6 +37,9 @@ eval "$(starship init zsh)"
 # Aliases
 ####################################
 
+# General
+alias ls='exa --git --long'
+
 # Docker
 alias docker-compose="docker compose"
 alias dc="docker compose"
