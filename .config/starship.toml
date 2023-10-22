@@ -148,4 +148,4 @@ format = '[ $symbol ($virtualenv) ]($style)'
 disabled = false
 time_format = "%I:%M %p" # Hour:Minute Format
 style = "bg:#33658A"
-format = '[ ♥ $time ]($style)'
+format = '[  $time ]($style)'
