@@ -10,6 +10,14 @@ export TZ='America/Los_Angeles'
 
 export ZSH="$HOME/.oh-my-zsh"
 
+# Install plugins
+if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ]]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
+if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ]]; then
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
+
 ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
