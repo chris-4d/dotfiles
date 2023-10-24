@@ -4,6 +4,11 @@
 
 export TZ='America/Los_Angeles'
 
+# Add Homebrew to PATH
+if [[ -d ~/.linuxbrew ]]; then
+  eval "$(~/.linuxbrew/bin/brew shellenv)"
+fi
+
 ####################################
 # ZSH Setup
 ####################################
